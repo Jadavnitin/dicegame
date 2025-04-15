@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: "Poppins", sans-serif;
+   user-select: none;
+   overflow-x: hidden;
+}
+
+
+.frontpage-container {
+   min-height: 100vh;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: row;
+   flex-wrap: wrap;
+   padding: 20px;
+   gap: 20px;
+}
+
+
+.dice-img {
+   flex: 1 1 300px;
+   max-width: 100%;
+}
+
+.dice-img img {
+   width: 100%;
+   height: auto;
+   object-fit: contain;
+}
+
+
+.heading-playbtn {
+   flex: 1 1 300px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   text-align: center;
+   gap: 20px;
+}
+
+.heading-playbtn h1 {
+   font-size: clamp(36px, 8vw, 98px);
+   font-weight: bold;
+}
+
+.main {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+}
+
+
+.dicegame-play {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   height: auto;
+   gap: 20px;
+}
+
+.dicegame-play a {
+   align-self: center;
+}
+
+
+.play-gamebtn {
+   width: 220px;
+   height: 44px;
+   background-color: black;
+   color: white;
+   font-weight: 600;
+   text-decoration: none;
+   border-radius: 6px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   transition: background-color 0.3s ease;
+}
+
+.play-gamebtn:hover {
+   background-color: #222;
+}
+
+.play-gamebtn span {
+   font-size: 16px;
+   color: white;
+}
+
+
+@media (max-width: 768px) {
+   .frontpage-container {
+      flex-direction: column;
+      padding: 10px;
+   }
+
+   .heading-playbtn h1 {
+      font-size: clamp(32px, 10vw, 64px);
+   }
+
+   .play-gamebtn {
+      width: 180px;
+      height: 40px;
+   }
+
+   .dice-img,
+   .heading-playbtn {
+      width: 100%;
+   }
+}
+
+@media (max-width: 480px) {
+   .heading-playbtn h1 {
+      font-size: clamp(24px, 10vw, 48px);
+   }
+
+   .play-gamebtn span {
+      font-size: 14px;
+   }
+}

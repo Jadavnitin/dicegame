@@ -1,0 +1,222 @@
+/* Buttons */
+.show-rule,
+.reset-score,
+.back {
+   font-family: inherit;
+   width: 100%;
+   max-width: 220px;
+   height: 44px;
+   font-size: 16px;
+   font-weight: 600;
+   border-radius: 6px;
+}
+
+.show-rule {
+   background-color: black;
+   color: white;
+}
+
+.reset-score {
+   background-color: white;
+   color: black;
+}
+
+.back {
+   max-width: 110px;
+   background-color: black;
+   color: white;
+   align-self: flex-start;
+}
+
+/* Paragraph and Span */
+p {
+   margin: 0;
+   padding: 0;
+   font-size: 24px;
+}
+
+span {
+   font-weight: bold;
+   color: #000000;
+   font-size: 24px;
+}
+
+/* Image Container */
+.img-container {
+   width: 100%;
+   max-width: 240px;
+   height: auto;
+}
+
+.img-container img {
+   width: 100%;
+   height: auto;
+   display: block;
+}
+
+/* Dice Section */
+.dice-div {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 30px;
+   height: auto;
+   width: 100%;
+   max-width: 250px;
+   margin: 0 auto;
+}
+
+.main-dice {
+   min-height: calc(100vh - 150px);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 20px;
+}
+
+/* Score Display */
+.score-div {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   text-align: center;
+   font-family: inherit;
+   margin: 30px 10px;
+   gap: 20px;
+}
+
+.total-score {
+   display: flex;
+   flex-direction: column;
+   height: auto;
+}
+
+.total-score h1 {
+   padding: 0;
+   margin: 0;
+   font-size: 64px;
+   font-weight: 500;
+}
+
+.total-score p {
+   padding: 0;
+   margin: 0;
+   font-weight: 500;
+}
+
+/* Number Blocks */
+.number {
+   height: 72px;
+   width: 72px;
+   background-color: #ffffff;
+   color: black;
+   font-size: 24px;
+   font-family: inherit;
+   font-weight: bold;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 6px;
+}
+
+.select-number {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 20px;
+   justify-content: center;
+   margin: 20px 0;
+}
+
+.select-number span {
+   align-self: flex-end;
+   white-space: nowrap;
+}
+
+/* Active state */
+.isactive {
+   color: white;
+   background-color: black;
+}
+
+/* Rules Section */
+.show-rules {
+   max-width: 800px;
+   margin: 24px auto 0;
+   background-color: #fbf1f1;
+   padding: 20px;
+   border-radius: 10px;
+}
+
+h2 {
+   font-size: 24px;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+   .total-score h1 {
+      font-size: 56px;
+   }
+}
+
+@media (max-width: 768px) {
+   .score-div {
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .total-score h1 {
+      font-size: 48px;
+   }
+
+   .number {
+      height: 60px;
+      width: 60px;
+      font-size: 20px;
+   }
+
+   .select-number {
+      gap: 12px;
+   }
+
+   span,
+   p {
+      font-size: 20px;
+   }
+}
+
+@media (max-width: 480px) {
+   .total-score h1 {
+      font-size: 36px;
+   }
+
+   .number {
+      height: 48px;
+      width: 48px;
+      font-size: 16px;
+   }
+
+   span,
+   p {
+      font-size: 18px;
+   }
+
+   h2 {
+      font-size: 20px;
+   }
+
+   .show-rule,
+   .reset-score,
+   .back {
+      height: 40px;
+      font-size: 14px;
+   }
+
+   .img-container {
+      max-width: 180px;
+   }
+
+   .dice-div {
+      max-width: 100%;
+   }
+}
+
