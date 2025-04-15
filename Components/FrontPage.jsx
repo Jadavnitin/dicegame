@@ -1,6 +1,6 @@
 import React from 'react'
 import "./FrontPage.css";
-import diceimg from "../Images/dices.png";
+import diceimg from "../public/images/dices.png";
 import { NavLink } from 'react-router-dom';
 
 
