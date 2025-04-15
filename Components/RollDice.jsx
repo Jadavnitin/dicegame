@@ -4,7 +4,7 @@ const RollDice = ({ className, onClick, dicenumber }) => {
   return (
     <>
         <div className={className}>
-           <img onClick={onClick} src={`/public/images/dice_${dicenumber}.png`} alt="dice" />
+        <img onClick={onClick} src={`/images/dice_${dicenumber}.png`} alt="dice" />
         </div>
     </>
   )
